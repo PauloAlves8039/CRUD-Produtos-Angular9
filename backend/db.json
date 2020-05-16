@@ -19,6 +19,11 @@
       "name": "Lapis Preto Básico",
       "price": 1.5,
       "id": 4
+    },
+    {
+      "name": "Lápis Preto",
+      "price": "2.55",
+      "id": 5
     }
   ]
 }

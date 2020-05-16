@@ -36,5 +36,12 @@ export class ProductService {
   create(product: Product): Observable<Product> {
     return this.http.post<Product>(this.baseUrl, product);
   }
+  
+  /**
+   * Responsável por obter uma lista de produtos.
+   */
+  read(): Observable<Product[]> {
+    return this.http.get<Product[]>(this.baseUrl);
+  }
 
 }
