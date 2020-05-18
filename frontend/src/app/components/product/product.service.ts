@@ -17,7 +17,7 @@ export class ProductService {
     * Realiza a exibição de uma mensagem toast.
     * @function
     * @name showMessage
-    * @param msg - parâmetro responsável pelo conteúdo da mensagem exibida.
+    * @param msg parâmetro responsável pelo conteúdo da mensagem exibida.
     */
   showMessage(msg: string): void {
     this.snackBar.open(msg, 'X', {
@@ -31,7 +31,7 @@ export class ProductService {
    * Responsável pela inserção de um novo produto.
    * @function
    * @name  create
-   * @param product - parâmetro responsável por representar a entidade Produto.
+   * @param product parâmetro responsável por representar a entidade Produto.
    */
   create(product: Product): Observable<Product> {
     return this.http.post<Product>(this.baseUrl, product);
@@ -48,13 +48,13 @@ export class ProductService {
   }
   
   /**
-   * Responsável pelo pesquisa do produto por id.
+   * Responsável pela pesquisa do produto por id.
    * @function
    * @name readById
-   * @param id - parâmetro de pesquisa do objeto produto.
+   * @param id parâmetro de pesquisa do objeto produto.
    * @returns um registro do produto selecionado por id.
    */
-  readById(id: string): Observable<Product> {
+  readById(id: number): Observable<Product> {
     const url = `${this.baseUrl}/${id}`;
     return this.http.get<Product>(url);
   }
@@ -69,6 +69,17 @@ export class ProductService {
   update(product: Product): Observable<Product> {
     const url = `${this.baseUrl}/${product.id}`;
     return this.http.put<Product>(url, product);
+  }
+  
+  /**
+   * Responsável por excluir produto por id.
+   * @function
+   * @name delete
+   * @param id parâmetro responsável pela exlcusão do produto.
+   */
+  delete(id: number): Observable<Product> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.delete<Product>(url);
   }
 
 }
