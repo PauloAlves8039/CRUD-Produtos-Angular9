@@ -39,9 +39,36 @@ export class ProductService {
   
   /**
    * Responsável por obter uma lista de produtos.
+   * @function
+   * @name read
+   * @returns uma lista de produtos.
    */
   read(): Observable<Product[]> {
     return this.http.get<Product[]>(this.baseUrl);
+  }
+  
+  /**
+   * Responsável pelo pesquisa do produto por id.
+   * @function
+   * @name readById
+   * @param id - parâmetro de pesquisa do objeto produto.
+   * @returns um registro do produto selecionado por id.
+   */
+  readById(id: string): Observable<Product> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<Product>(url);
+  }
+  
+  /**
+   * Responsável por atualizar registro de um produto.
+   * @function
+   * @name update
+   * @param product parâmetro de representação do objeto produto.
+   * @returns um registro do produto atualizado por id.
+   */
+  update(product: Product): Observable<Product> {
+    const url = `${this.baseUrl}/${product.id}`;
+    return this.http.put<Product>(url, product);
   }
 
 }
