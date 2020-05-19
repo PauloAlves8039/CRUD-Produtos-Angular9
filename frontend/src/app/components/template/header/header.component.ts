@@ -13,14 +13,29 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
   
+  /**
+   * Realiza uma alteração do título da página.
+   * @function
+   * @name title
+   */
   get title(): string {
     return this.headerService.headerData.title
   }
-
+  
+  /**
+   * Realiza uma alteração do ícone.
+   * @function
+   * @name icon
+   */
   get icon(): string {
     return this.headerService.headerData.icon
   }
-
+  
+  /**
+   * Realiza uma alteração da url.
+   * @function
+   * @name routerUrl
+   */
   get routerUrl(): string {
     return this.headerService.headerData.routerUrl
   }
