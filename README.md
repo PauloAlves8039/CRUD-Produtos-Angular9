@@ -14,7 +14,7 @@ Código fonte do projeto pode ter algumas alterações futuras, o mesmo teve com
 
 ## :wrench: Recursos Utilizados
 
-- [Angular v9.1.7](https://angular.io/doc).
+- [Angular v9.1.7](https://angular.io/).
 - [Angular CLI v9.1.6](https://cli.angular.io/).
 - [Angular Material v9.2.4](https://material.angular.io/).
 - [JSON Server v0.16.1](https://www.npmjs.com/package/json-server).
