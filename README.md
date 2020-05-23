@@ -1,4 +1,4 @@
-<h1 align="center">:book: CRUD Produtos</h1>
+<h1 align="center">:book: CRUD Produtos Angular9</h1>
 
 <p align="center">
   <a href="https://angular.io/docs"><img src="https://img.shields.io/badge/angular%20-v9.1.7-red"></a>
@@ -23,12 +23,12 @@ Código fonte do projeto pode ter algumas alterações futuras, o mesmo teve com
 Baixar repositório ```git clone https://github.com/PauloAlves8039/CRUD-Produtos.git```
 
 ### Backend
-- Abra a pasta ```CRUD-Produtos/backend``` no prompt de comando do Windows.
+- Abra a pasta ```CRUD-Produtos-Angular9/backend``` no prompt de comando do Windows.
 - Execute ```npm install``` para instalar os módulos necessários.
 - Execute ```npm start``` para iniciar o servidor backend ```localhost:3001/```.
 
 ### Frontend
-- Abra a pasta ``` CRUD-Produtos/frontend ``` no prompt de comando do Windows.
+- Abra a pasta ``` CRUD-Produtos-Angular9/frontend ``` no prompt de comando do Windows.
 - Execute ```npm install``` para instalar os módulos necessários do Angular CLI.
 - Execute ```npm start``` para iniciar o servidor frontend. ```localhost:4200/```.
 
