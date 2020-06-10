@@ -8,7 +8,9 @@
 </p>
 
 ## :computer: Projeto
-Repositório de uma aplicação web desenvolvida para fins acadêmicos para catalogar uma lista de produtos com operações básicas de inserção, busca, atualização e exclusão de registros utilizando o framework Angular 9.
+Repositório de uma aplicação web desenvolvida para fins acadêmicos com o objetivo de catalogar uma lista de produtos através das operações básicas de inserção, busca, atualização e exclusão de registros.  
+
+No frontend desse projeto foi utilizado o Angular 9, no backend o JSON Server para armazenamento dos registros e o estilo ficou por conta do Angular Material. 
 
 Código fonte do projeto pode ter algumas alterações futuras, o mesmo teve como base no curso [Angular 9 - Essencial](https://www.cod3r.com.br/courses/angular-9-essencial).
 
@@ -47,4 +49,4 @@ Baixar repositório ```git clone https://github.com/PauloAlves8039/CRUD-Produtos
 
 
 ## Author
-:computer: [Paulo Alves](https://github.com/PauloAlves8039)
+:boy: [Paulo Alves](https://github.com/PauloAlves8039)
